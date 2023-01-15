@@ -1,7 +1,8 @@
-
+html {
+    overflow-y: scroll;
+}
 body {
     margin: unset;
-    overflow: hidden;
 }
 
 a {
@@ -62,7 +63,7 @@ h1 {
 .nav-panel {
     background-color: #0A0908;
     display: flex;
-    position: fixed;
+    position: absolute;
     height: 65px;
     width: 100%;
 }
@@ -98,12 +99,12 @@ h1 {
     position: absolute;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    height: 80vh;
     background-image: url("https://media.giphy.com/media/l0Ex8vujsc51SVuMM/giphy.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20%;
-    top: 65px;
+    top: 10.11vh;
     width: 100%;
     text-align: center;
     background-color: #000000;
@@ -124,6 +125,259 @@ h1 {
     animation: print-text 3s steps(25), type-line .75s step-start infinite;
     max-width: 25ch;
     border-right: 1px solid #EFF6E0;
+}
+
+.about {
+    position: absolute;
+    top: 90.11vh;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0A0908;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    width: 70%;
+}
+
+.photo {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    filter: brightness(0.8);
+    transition: all 0.8s ease;
+    border: 3px solid #171717;
+    object-fit: cover;
+}
+
+.my-photo {
+    position: relative;
+}
+
+.my-photo::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 8px;
+    left: 8px;
+    transform: translateX(-10px) translateY(-10px);
+    z-index: -1;
+    border: 2px solid #444444;
+    transition: .4s ease-in-out;
+}
+
+.my-photo:hover::after {
+    transform: none;
+}
+
+.my-photo:hover img {
+    transform: translateX(-8px) translateY(-8px);
+}
+
+.photo:hover {
+    filter: brightness(1);
+}
+
+#description h2 {
+    color: #EFF6E0;
+    border-bottom: 1px #EFF6E0 solid;
+    padding-bottom: 8px;
+}
+
+#description p {
+    color: #EFF6E0;
+}
+
+.experience {
+    position: absolute;
+    top: 190.11vh;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.main-section {
+    width: 70%;
+}
+
+.main-section h2 {
+    color: #EFF6E0;
+    border-bottom: 1px #EFF6E0 solid;
+    padding-bottom: 8px;
+}
+
+.work-object {
+    color: #EFF6E0;
+}
+
+.education {
+    color: #EFF6E0;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.topic {
+    list-style-type: square;
+    color: #EFF6E0;
+    padding: 2px;
+}
+
+.resume {
+    color: #EFF6E0;
+    text-decoration: none;
+    border: 1px #EFF6E0 solid;
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+    transition: font-size .2s ease-in-out;
+}
+
+.resume:hover {
+    font-size: 18px;
+}
+
+.projects {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: #EFF6E0;
+    top: 250.11vh;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0A0908;
+}
+
+.matrix h2 {
+    color: #EFF6E0;
+    border-bottom: 1px #EFF6E0 solid;
+    padding-bottom: 8px;
+}
+
+.matrix {
+    position: absolute;
+    width: 70%;
+}
+
+.matrix-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    padding-top: 18px;
+    flex-wrap: wrap;
+}
+
+.project {
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    background-color: #171717;
+}
+
+.text {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease-in-out;
+    background: #171717;
+    opacity: 0;
+}
+
+.note {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.stack {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.stack p {
+    width: 50%;
+}
+
+.github-ref {
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.git {
+    filter: invert(94%) sepia(3%) saturate(1073%) hue-rotate(43deg) brightness(106%) contrast(93%);
+    width: 10%;
+    padding: 8px;
+    height: auto;
+}
+
+span {
+    padding: 10px;
+    margin: 5px;
+    width: 18rem;
+    border-radius: 25px;
+    background: #2B2B2B;
+}
+
+.project:hover .text {
+    opacity: 1;
+}
+
+.project-screenshot {
+    max-width: 400px;
+    height: auto;
+}
+
+.contacts {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 48vh;
+    top: 350.11vh;
+    background-color: black;
+}
+
+.contact-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.contact-list h2 {
+    color: #EFF6E0;
+    border-bottom: 1px #EFF6E0 solid;
+    padding-bottom: 8px;
+}
+
+.icon {
+    filter: invert(94%) sepia(3%) saturate(1073%) hue-rotate(43deg) brightness(106%) contrast(93%);
+    width: 2%;
+    height: auto;
+    padding: 10px;
+}
+
+.contact-list p {
+    color: #EFF6E0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
 }
 
 @keyframes print-text {

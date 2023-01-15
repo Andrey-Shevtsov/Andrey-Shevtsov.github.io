@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/index.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="css/index.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300&family=IBM+Plex+Mono:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <style>
         .nav-panel {
             font-family: "IBM Plex Mono", monospace;
@@ -21,33 +20,69 @@
         .card h2 {
             font-family: "IBM Plex Mono", serif;
         }
+        #description h2 {
+            font-family: "Roboto", serif;
+        }
+        #description p {
+            font-family: "IBM Plex Mono", monospace;
+        }
+        .main-section h2 {
+            font-family: "Roboto", serif;
+        }
+        .work-object {
+            font-family: "IBM Plex Mono", monospace;
+        }
+        .education {
+            font-family: "IBM Plex Mono", monospace;
+        }
+        .topic {
+            font-family: "IBM Plex Mono", monospace;
+        }
+        .resume {
+            font-family: "IBM Plex Mono", monospace;
+        }
+        .matrix h2 {
+            font-family: "Roboto", serif;
+        }
+        .project-name {
+            font-family: "IBM Plex Mono", monospace;
+        }
+        .note {
+            font-family: "IBM Plex Mono", monospace;
+        }
+        .stack {
+            font-family: "Asap", serif;
+        }
+        .contact-list {
+            font-family: "Roboto", serif;
+        }
     </style>
     <title>Title</title>
 </head>
 <body>
 <nav class="nav-panel">
     <div class="grid-container">
-        <div class="row">
+        <div class="grid-row">
         <div class="grid-item">
             <div class="nav-label">
                 <img class="code-slash" src="res/icons/code-slash.svg">
-                <a class="page-name" href="#">Андрей Шевцов</a>
+                <a class="page-name">Андрей Шевцов</a>
             </div>
         </div>
         <div class="grid-item">
             <div class="btn-block">
                 <ul class="btn-list">
                     <li class="li-content">
-                        <a href="#">// О себе</a>
+                        <a href="#about">// О себе</a>
                     </li>
                     <li class="li-content">
-                        <a href="#">// Опыт работы</a>
+                        <a href="#exp">// Опыт работы</a>
                     </li>
                     <li class="li-content">
-                        <a href="#">// Проекты</a>
+                        <a href="#projects">// Проекты</a>
                     </li>
                     <li class="li-content">
-                        <a href="#">// Контакты</a>
+                        <a href="#contact-me">// Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -62,6 +97,120 @@
     <div class="card">
         <h1 class="name">Андрей Шевцов</h1>
         <h2>Java backend Разработчик.</h2>
+    </div>
+</div>
+<div class="about">
+    <div class="person">
+        <div id="description">
+            <h2 id="about">О себе:</h2>
+            <p>
+                Привет! Меня зовут Андрей, я из Астаны и моя страсть - разработка
+                бизнес-логики для web-приложений.
+            </p>
+            <p>
+                Вот моя небольшая история:
+            </p>
+            <p>
+                С 2019-го по 2021-ый год я учился в НИЯУ МИФИ (г. Москва), но затем
+                был вынужден вернуться домой, в Астану.
+            </p>
+            <p>
+                С сентября 2021-го по сегодняшний день я работаю инженером в компании
+                "Pulsar Systems". Здесь я решал многочисленные технические проблемы
+                как наших клиентов, так и внутри нашего офиса.
+            </p>
+            <p>
+                Параллельно я изучал языки программирования, базы данных, алгоритмы.
+                И сейчас я нахожусь в поиске новой работы, которая даст мне
+                возможность показать свои навыки, а также изучать больше новых
+                технологий.
+            </p>
+        </div>
+        <div class="my-photo">
+            <img class="photo" src="res/images/photo_2022-05-14_15-28-44.jpg" alt=" my photo">
+        </div>
+    </div>
+</div>
+<div class="experience">
+    <div class="main-section">
+        <h2 id="exp">Опыт работы:</h2>
+        <ul class="work-object">
+            <p class="label">
+                ТОО "Pulsar Systems"
+            </p>
+            <li class="topic">
+                Автоматизация получения данных с помощью API, работа с данными в
+                формате JSON.
+            </li>
+            <li class="topic">
+                Работа с API программного обеспечения компании при решении задач,
+                связанных с интеграцией с существующими базами данных и системами
+                заказчиков.
+            </li>
+            <li class="topic">
+                Оказание технической поддержки клиентам компании.
+            </li>
+        </ul>
+        <ul class="education">
+            <p class="label">
+                Национальный Исследовательский Ядерный Университет "МИФИ" (г. Москва)
+            </p>
+            <li class="topic">
+                Специальность: Электроника и автоматика физических установок.
+            </li>
+        </ul>
+        <a class="resume" href="#">// Скачать резюме</a>
+    </div>
+</div>
+<div class="projects">
+    <div class="matrix">
+        <h2 id="projects">Мои проекты:</h2>
+        <div class="matrix-row">
+            <div class="project">
+                <h3 class="project-name">
+                    Multithreaded Sudoku Validator
+                </h3>
+                <img  class="project-screenshot" src="res/images/sudoku-validator-project.png" alt="screenshot">
+                <div class="text">
+                    <p class="note">
+                        Небольшой проект, демонстрирующий работу с
+                        мультипоточностью на примере проверки решений судоку.
+                    </p>
+                    <div class="stack">
+                        <a class="github-ref" href="https://github.com/Andrey-Shevtsov/sudoku-multithreaded-validator">
+                            <img class="git" src="res/icons/github.svg">
+                            View on GitHub
+                        </a>
+                        <p class="technologies">
+                            <span>Java</span>
+                            <span>JUnit</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matrix-row">
+
+        </div>
+    </div>
+</div>
+<div class="contacts">
+    <div class="contact-list">
+        <h2 id="contact-me">
+            Связаться со мной:
+        </h2>
+        <p class="email">
+            <img class="icon" src="res/icons/envelope-at.svg">
+            dev-shevtsov@pm.me
+        </p>
+        <p class="telegram">
+            <img class="icon" src="res/icons/telegram.svg">
+            https://t.me/AndreyShevtsov01
+        </p>
+        <p class="phone">
+            <img class="icon" src="res/icons/phone-vibrate.svg">
+            +7-778-599-90-72
+        </p>
     </div>
 </div>
 <script src="scripts/index.js"></script>
