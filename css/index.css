@@ -1,0 +1,148 @@
+
+body {
+    margin: unset;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #EFF6E0;
+}
+
+h1 {
+    margin: 4%;
+}
+
+.grid-container {
+    display: inline-grid;
+    width: 100%;
+}
+.aside-field {
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+
+.central-column {
+    float: left;
+    height: 100%;
+    width: 60%;
+}
+
+.grid-item {
+    float: left;
+    height: 100%;
+    width: 33.33%;
+}
+
+.code-slash {
+    filter: invert(94%) sepia(3%) saturate(1073%) hue-rotate(43deg) brightness(106%) contrast(93%);
+}
+
+.code-slash {
+    padding: 3%;
+    height: 70%;
+    width: auto;
+}
+
+.nav-label {
+    color: #EFF6E0;
+    display: flex;
+    margin: unset;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.page-name {
+    justify-content: center;
+    font-size: large;
+}
+
+.nav-panel {
+    background-color: #0A0908;
+    display: flex;
+    position: fixed;
+    height: 65px;
+    width: 100%;
+}
+
+.btn-block {
+    justify-content: center;
+}
+
+.btn-list {
+    padding: 0;
+    color: #EFF6E0;
+    font-size: medium;
+    list-style-type: none;
+    display: flex;
+}
+
+.btn-list:hover {
+    color: grey;
+}
+
+.li-content {
+    margin: 1%;
+    font-size: 15px;
+    transition: font-size .2s ease-in-out;
+}
+
+.li-content:hover {
+    color: #3890e7;
+    font-size: 17px;
+}
+
+.intro {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("https://media.giphy.com/media/l0Ex8vujsc51SVuMM/giphy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    top: 65px;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+}
+
+.card {
+    margin-top: 2%;
+    color: #EFF6E0;
+    min-width: 50ch;
+}
+
+.card h2 {
+    color: #EFF6E0;
+    opacity: .9;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 200;
+    animation: print-text 3s steps(23), type-line .75s step-start infinite;
+    max-width: 26ch;
+    border-right: 1px solid #EFF6E0;
+}
+
+@keyframes print-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes type-line{
+    0%{
+        border-color: #EFF6E0;
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: #EFF6E0;
+    }
+}
