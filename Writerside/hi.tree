@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Программное обеспечение ZKBio Time"
+                 start-page="Main-topic.md">
+
+    <toc-element topic="Main-topic.md"/>
+    <toc-element topic="Installation-topic.md"/>
+    <toc-element topic="Activation-topic.md"/>
+</instance-profile>
