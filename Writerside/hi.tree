@@ -9,4 +9,5 @@
     <toc-element topic="Main-topic.md"/>
     <toc-element topic="Installation-topic.md"/>
     <toc-element topic="Activation-topic.md"/>
+    <toc-element topic="Connect-device-topic.md"/>
 </instance-profile>
