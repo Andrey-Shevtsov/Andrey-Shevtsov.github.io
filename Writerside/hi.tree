@@ -10,4 +10,7 @@
     <toc-element topic="Installation-topic.md"/>
     <toc-element topic="Activation-topic.md"/>
     <toc-element topic="Connect-device-topic.md"/>
+    <toc-element topic="Employee-add-topic.md"/>
+    <toc-element topic="shift-set-up-topic.md"/>
+    <toc-element topic="reports-download-topic.md"/>
 </instance-profile>
