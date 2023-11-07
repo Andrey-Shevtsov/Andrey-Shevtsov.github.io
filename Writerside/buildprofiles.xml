@@ -4,7 +4,7 @@
         <color-preset>Vivid</color-preset>
         <primary-color>forest</primary-color>
         <header-logo>logo.png</header-logo>
-        <custom-favicons>BioTime.ico</custom-favicons>
+        <custom-favicons>favicon.ico</custom-favicons>
     </variables>
     <build-profile instance="hi"/>
 </buildprofiles>
